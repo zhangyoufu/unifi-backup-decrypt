@@ -6,4 +6,4 @@ instance.init(2, new SecretKeySpec("bcyangkmluohmars".getBytes(), "AES"), new Iv
 return new CipherInputStream(inputStream, instance);
 ```
 
-malformed zip files requires fixing before unzip
+malformed zip files require fixing before unzip
