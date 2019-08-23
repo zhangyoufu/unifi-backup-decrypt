@@ -1,3 +1,10 @@
+
+Installation of tools used:
+
+```
+apt-get install openssl python3-bson python3-pymongo unzip zip
+```
+
 some code snippet
 
 ```
