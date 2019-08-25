@@ -1,11 +1,16 @@
+# UniFi backup file (.unf) decryption
 
-Installation of tools used:
+## Requirement
 
-```
-apt-get install openssl python3-bson python3-pymongo unzip zip
-```
+* openssl
+* zip
 
-some code snippet
+## Hint
+
+If you want to view/edit the content of UniFi backup file, you may want to make
+use of `mongorestore` and `mongodump`.
+
+## Some code snippet
 
 ```
 final Cipher instance = Cipher.getInstance("AES/CBC/NoPadding");
