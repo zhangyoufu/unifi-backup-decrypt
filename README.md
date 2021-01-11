@@ -5,11 +5,6 @@
 * openssl
 * zip
 
-## Hint
-
-If you want to view/edit the content of UniFi backup file, you may want to make
-use of `mongorestore` and `mongodump`.
-
 ## Some code snippet
 
 ```
@@ -19,3 +14,11 @@ return new CipherInputStream(inputStream, instance);
 ```
 
 malformed zip files require fixing before unzip
+
+## Database
+
+`db.gz` contains a stream of BSON document for each collections of `ace` database.
+
+You can view its content by `gunzip -c db.gz | bsondump`.
+
+It should be trivial to write a script that helps import/export. If anybody wants to contribute, PRs are welcomed.
