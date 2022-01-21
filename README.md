@@ -1,4 +1,4 @@
-# UniFi backup file (.unf) decryption
+# UniFi backup file (.unf) / support file (.supp) decryption
 
 ## Requirement
 
